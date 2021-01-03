@@ -1,5 +1,5 @@
 # Vulnerable-Machine
-Making your own CTF to hack and learn
+Making your own CTF
 
 ## Resources
 
