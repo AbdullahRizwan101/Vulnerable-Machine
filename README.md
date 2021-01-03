@@ -11,3 +11,4 @@ Making your own CTF to hack and learn
 * https://donavan.sg/blog/index.php/2019/04/06/building-vulnerable-machines-part-2-a-torment-of-a-journey/
 
 * https://docs.google.com/document/d/1QBhColOjT8vVeyQxM1qNE-pczqeNSJiWOEiZQF2SSh8/mobilebasic
+* https://bobloblaw321.wixsite.com/website/post/the-making-of-a-vulnerable-machine-blob-blog
