@@ -2,7 +2,7 @@ Hello everyone I hope you are doing well , I am going to show how you can make y
 
 Now the one which I am creating there won't be anything new because I will be using an old version of ubuntu which is vulnerable to dirty cow exploit but the important thing is that how you may configure the box , opening FTP,SSH and HTTP services on it or maybe changing the port number.
 
-#### 1.Research
+## 1.Research
 
 First of all research what vulnerability you want someone to exploit. Look up on exploit-db if you want to find any vulnerability.
 
@@ -18,7 +18,7 @@ Visit `http://old-releases.ubuntu.com/releases/` if you want to download old rel
 
 Now we want the server image because it will give us an option to use GUI or CLI and we only want to be working with CLI.
 
-#### 2.Installation
+## 2.Installation
 
 To install this image you can use VMware or Virtual box but I recommend you to use virtual box because it is easy to export the OVA file that you later will upload on some CTF platforms.
 
@@ -44,7 +44,7 @@ Now that you have the OS installed, enable the root login through this command `
 
 <img src="https://i.imgur.com/u0jhaZI.png"/>
 
-####  3.Configuration
+## 3.Configuration
 
 Now you want to have some tools to be installed on the box first of all update the repository through which it will fetch the packages
 
@@ -72,7 +72,7 @@ Before we setup other services or the way to get a foothold let's test privilege
 
 We escalated our privileges to root through this exploit so it worked as expected.
 
-###### 3.1 Configure FTP 
+#### 3.1 Configure FTP 
 If you want an ftp server on your box you can do it by installing `vsftpd`
 
 <img src="https://i.imgur.com/b0Tw8Os.png"/>
@@ -124,7 +124,7 @@ As you can see we get the file that is `/var/ftp` directory. We can do a lot pla
 
 That's pretty much all the configuration I'll do with ftp now let's move on to configuring the http server.
 
-##### 3.2 Configure Apache HTTP server
+### 3.2 Configure Apache HTTP server
 
 Since we already have installed apache when we were given an option of istalling LAMP server so all we have to do is  allow ufw (Uncomplicated Firewall) to enable traffic for http or port 80
 
@@ -170,7 +170,7 @@ The first line is just a simple HTML heading which tells that we have paramter n
 
 <img src="https://i.imgur.com/zxjemi1.png"/>
 
-##### 3.3 Configure SSH
+### 3.3 Configure SSH
 
 For ssh we must have installed  OpenSSH  but it was done at the beginning so we don't need to do that again. We can check it's version
 
@@ -200,7 +200,7 @@ And in order to turn off `.bash_history` just create a sylink to `/dev/null`
 symlink -sf /dev/null ~/.bash_history
 ```
 
-#### 4. Exporting the VM to an OVA format
+## 4. Exporting the VM to an OVA format
 
 Now when you have tested the machine if it's working as intended and when you ran scripts for enumeration gives what you want them to do (although I haven't showed running them) you then have to export it to an OVA format so you could then upload to submit and then user can download and import that machine to thier virtualbox or VMware. 
 
